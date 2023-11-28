@@ -1,0 +1,11 @@
+Colores
+
+Principal:
+rgb(41,175,201);
+Secundario:
+rgb(248,143,8);
+Acento:
+rgb(26,112,125);
+bg-secundario
+rgb(254,232,164);
+
