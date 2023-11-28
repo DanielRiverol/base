@@ -6,11 +6,15 @@
   font-weight: 600;
   letter-spacing: 1px;
   &:hover {
-    background-color: $principal;
+    background-color: $secundario;
     color: $color-secundario;
   }
 }
 .button-variant {
   @extend .button;
   background-color: $secundario;
+  &:hover {
+    background-color: $principal;
+    color: $color-secundario;
+  }
 }
