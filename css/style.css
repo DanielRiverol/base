@@ -20,29 +20,42 @@ header.row {
   place-items: center;
 }
 
-.button {
-  padding: 12px 20px;
+.button, .button-variant {
+  padding: 12px 22px;
   background-color: rgb(41, 175, 201);
   border-radius: 30px;
   color: rgb(255, 255, 255);
   font-weight: 600;
   letter-spacing: 1px;
 }
-.button:hover {
+.button:hover, .button-variant:hover {
   background-color: rgb(41, 175, 201);
   color: rgb(255, 255, 255);
 }
 
+.button-variant {
+  background-color: rgb(248, 143, 8);
+}
+
 .row {
   position: relative;
+  z-index: 2;
+}
+
+.bg-principal {
+  background-color: rgb(26, 112, 125);
+}
+
+.bg-secundario {
+  background-color: rgb(254, 232, 164);
 }
 
 .divider, .divider-lg {
-  top: 22px;
+  top: 4.4rem;
   z-index: -1;
   left: 30%;
   position: absolute;
-  height: 20px;
+  height: 1.1rem;
   width: 40%;
   background-color: rgb(164, 231, 239);
 }
@@ -50,6 +63,39 @@ header.row {
 .divider-lg {
   left: 20%;
   width: 60%;
+}
+
+.circle {
+  border: 2px solid rgb(41, 175, 201);
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgb(41, 175, 201);
+  font-size: 1.5rem;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+.icon-warning {
+  color: rgb(254, 232, 164);
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

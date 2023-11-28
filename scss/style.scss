@@ -24,13 +24,20 @@ header.row {
 
 .row {
   position: relative;
+  z-index: 2;
+}
+.bg-principal {
+  background-color: $acento;
+}
+.bg-secundario {
+  background-color: $bg-secundario;
 }
 .divider {
-  top: 22px;
+  top: 4.4rem;
   z-index: -1;
   left: 30%;
   position: absolute;
-  height: 20px;
+  height: 1.1rem;
   width: 40%;
   background-color: $bg-principal;
 }
@@ -38,4 +45,35 @@ header.row {
   @extend .divider;
   left: 20%;
   width: 60%;
+}
+
+.circle {
+  border: 2px solid $principal;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $principal;
+  font-size: calc($font-size * 1.5);
+}
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.icon {
+  font-size: calc($font-size * 1.5);
+  &-warning {
+    color: $bg-secundario;
+  }
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
 }

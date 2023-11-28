@@ -1,12 +1,16 @@
 .button {
-  padding: 12px 20px;
+  padding: 12px 22px;
   background-color: $principal;
   border-radius: 30px;
   color: $color-secundario;
   font-weight: 600;
   letter-spacing: 1px;
-  &:hover{
-      background-color: $principal;
-      color: $color-secundario;
+  &:hover {
+    background-color: $principal;
+    color: $color-secundario;
   }
+}
+.button-variant {
+  @extend .button;
+  background-color: $secundario;
 }
