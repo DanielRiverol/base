@@ -21,6 +21,10 @@ header.row {
   place-items: center;
 }
 
+header.header-comprar {
+  height: 300px;
+}
+
 .button, .button-variant {
   padding: 12px 20px;
   border: 2px solid #2A2F35;
@@ -45,6 +49,7 @@ header.row {
 
 .button-dark {
   background-color: #2a2f35;
+  border: 2px solid #2a2f35;
   color: #F8FFF8;
 }
 
@@ -55,6 +60,7 @@ header.row {
 
 .button-primary {
   background-color: #ed7470;
+  border: 2px solid #ed7470;
   color: #F8FFF8;
 }
 
@@ -137,6 +143,28 @@ header.row {
   border-left: 3px solid #73CAC3;
 }
 
+/* comprar */
+.card-sidebar, .card-content {
+  width: 258px;
+}
+.card-sidebar .card-header, .card-content .card-header {
+  background-color: #73CAC3;
+}
+
+.list-group-item {
+  border: none;
+}
+.list-group-item a i {
+  font-size: 1.2rem;
+}
+.list-group-item a .bi-pin-map {
+  color: #ED7470;
+}
+.list-group-item a .bi-plus-square-fill {
+  color: #73CAC3;
+}
+
+/* footer */
 footer {
   height: 150px;
   display: flex;

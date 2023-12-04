@@ -27,6 +27,7 @@ $buttons-colors: (
 @each $button, $color in $buttons-colors {
   .button-#{$button} {
     background-color: $color;
+    border: 2px solid $color;
     color: $bg-body;
   }
   .button-outline-#{$button} {
