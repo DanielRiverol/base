@@ -3,9 +3,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: $bg-body;
 }
 .title {
-  color: $principal;
+  color: $dark;
   font-weight: 600;
   &-secondary {
     font-weight: 600;
@@ -15,8 +16,8 @@ body {
 
 header.row {
   padding: 0 10%;
-  background-color: $bg-principal;
-  height: 65vh;
+  background-color: $principal;
+  height: 500px;
   display: flex;
   place-items: center;
 }
@@ -38,8 +39,12 @@ header.row {
   left: 30%;
   position: absolute;
   height: 1.1rem;
+
+  background-color: $principal;
+}
+.divider-sm {
+  @extend .divider;
   width: 40%;
-  background-color: $bg-principal;
 }
 .divider-lg {
   @extend .divider;
@@ -71,9 +76,61 @@ header.row {
     color: $bg-secundario;
   }
 }
-
+.border-custom {
+  border-left: 3px solid $principal;
+}
 footer {
   height: 150px;
   display: flex;
   align-items: center;
+  background-color: $dark;
+}
+
+@media (max-width: 768px) {
+  header.row {
+    height: auto;
+    text-align: center;
+    h1 {
+      font-size: 30px !important;
+    }
+
+    p {
+      font-size: 18px !important;
+    }
+    .col {
+      margin-top: 20px;
+    }
+  }
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .row {
+    div.circle {
+      margin: 0 auto;
+    }
+    .col .text-start {
+      text-align: center !important;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .border-custom {
+    border-left: 0;
+    border-top: 3px solid $principal;
+  }
+  .divider-lg {
+    left: 3%;
+    width: 95% !important;
+  }
+  .divider-sm {
+    left: 34%;
+    width: 30% !important;
+  }
 }
