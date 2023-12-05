@@ -5,6 +5,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: $bg-body;
 }
+nav {
+  background-color: #fff;
+}
 .title {
   color: $dark;
   font-weight: 600;
@@ -82,29 +85,50 @@ header.header-comprar {
 .border-custom {
   border-left: 3px solid $principal;
 }
-
+.avatar {
+  width: 145px;
+  height: 145px;
+  object-fit: cover;
+}
 /* comprar */
-.card-sidebar,.card-content {
+.card-sidebar,
+.card-content {
   width: 258px;
-  .card-header{
+  .card-header {
     background-color: $principal;
   }
 }
 
 .list-group-item {
   border: none;
-  a i{
+  a i {
     font-size: 1.2rem;
   }
   a .bi-pin-map {
     color: $secundario;
- 
   }
   a .bi-plus-square-fill {
     color: $principal;
   }
 }
-
+$colors: (
+  dark: #2a2f35,
+  primary: #ed7470,
+  secondary: $secundario,
+);
+@each $cf, $color in $colors {
+  .color-#{$cf} {
+    color: $color;
+  }
+}
+.input-rounded {
+  border-radius: 30px;
+  outline: none !important;
+}
+.input-rounded:focus {
+  box-shadow: none;
+  border-color: $principal;
+}
 /* footer */
 footer {
   height: 150px;
