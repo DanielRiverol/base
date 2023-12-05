@@ -29,8 +29,13 @@ header.header-comprar {
   height: 300px;
 }
 
+header.login-register {
+  padding: 40px;
+  height: auto;
+}
+
 .button, .button-variant {
-  padding: 12px 20px;
+  padding: 5px 20px;
   border: 2px solid #2A2F35;
   border-radius: 30px;
   font-weight: 600;
@@ -189,7 +194,7 @@ header.header-comprar {
 }
 
 .input-rounded {
-  border-radius: 30px;
+  border-radius: 0.8rem;
   outline: none !important;
 }
 
@@ -247,6 +252,10 @@ footer {
   .divider-sm {
     left: 34%;
     width: 30% !important;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
   }
 }
 
